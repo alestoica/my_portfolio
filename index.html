@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">&lt; Alexandra Stoica /&gt;</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Alexandra Stoica</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <div class="squiggly-line">
+            <img src="./assets/profile-pic-1.jpeg" alt="profile picture" class="profile-pic"/>
+          </div>
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Alexandra</h1>
+          <p class="section__text__p2"><span class="auto-typed"></span></p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <!-- <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/alexandra-stoica27'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/alestoica'"
+            />
+          </div> -->
+        </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>&lt; Interests /&gt;</h3>
+              <ul class="interests-list">
+                <li>Programming</li>
+                <li>Travelling</li>
+                <li>Cinematography</li>
+              </ul>
+            </div>
+            <div class="details-container">
+              <h3>&lt; Education /&gt;</h3>
+              <p>Babeș-Bolyai University,<br>Faculty of Mathematics and Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              👋 Hi there! I'm a third-year Computer Science student passionate about web development and programming altogether. I'm always eager to learn and take on new challenges.
+              <br>
+              <br>
+              🌍 Beyond coding, I’m an avid traveler who loves exploring new cultures and meeting people.
+              <br>
+              <br>
+              🧩 With my strong problem-solving skills and a knack for teamwork, I thrive in team settings and enjoy collaborating with others. 
+            </p>
+          </div>
+        </div>
+        <div class="section__pic-container">
+          <div class="squiggly-line">
+            <img
+              src="./assets/profile-pic-3.jpeg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.gif"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">&lt; Soft Skills /&gt;</h2>
+            <div class="article-container">
+              <ul class="soft-skills-list">
+                <li>Communication</li>
+                <li>Problem-Solving</li>
+                <li>Adaptability</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">&lt; Tech Skills /&gt;</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/check.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Elementary</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.gif"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="slider">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+          </div>
+          
+          <div class="terminal-window">
+            <div class="project-pic">
+              <img
+                src="./assets/memory-game.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="project-info">
+              <h2 class="experience-sub-title project-title">Memory Game</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/alestoica/memory_game'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/DgmbMFEAgrA'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+          </div>
+          
+          <div class="terminal-window">
+            <div class="project-pic">
+              <img
+                src="./assets/toy-social-network.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="project-info">
+              <h2 class="experience-sub-title project-title">Toy Social Network</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/alestoica/toy_social_network'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/ISUVN89nLJs'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+          </div>
+          
+          <div class="terminal-window">
+            <div class="project-pic">
+              <img
+                src="./assets/wordle-win.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="project-info">
+              <h2 class="experience-sub-title project-title">Wordle Clone</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/alestoica/wordle_game_clone'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/9sEnlOCwWvY'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+          </div>
+          
+          <div class="terminal-window">
+            <div class="project-pic">
+              <img
+                src="./assets/web-social-media-app.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <div class="project-info">
+              <h2 class="experience-sub-title project-title">Web Social Media App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/alestoica/web_social_media_app'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/T4cPqp7vkXA'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+          </div>
+          
+          <div class="terminal-window">
+            <div class="project-pic">
+              <img
+                src="./assets/to-do-list.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <div class="project-info">
+              <h2 class="experience-sub-title project-title">To Do List App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/alestoica/to_do_list_app'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/S54Z7UJ_L88'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="next">></button>
+        <button id="prev"><</button>
+      </div>
+      
+      <img
+        src="./assets/arrow.gif"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:alestoica2709@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/alexandra-stoica27">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/alestoica">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="slider.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: ["Comp-Sci Student", "Tech Enthusiast", "Aspiring Web Dev"],
+        typeSpeed: 170,
+        backSpeed: 170,
+        looped: false
+      })
+    </script>
+
+</body>
+</html>
